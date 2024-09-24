@@ -3,7 +3,7 @@
 
 **Email:** [jordanlochhill@gmail.com](mailto:jordanlochhill@gmail.com) <br>
 **LinkedIn:** [linkedin.com/in/jordanlochhill](linkedin.com/in/jordanlochhill) <br>
-**GitHub:** [github.com/jordanhill](github.com/jordanhill) <br>
+**GitHub:** [github.com/jordanhill](github.com/jordanlochhill) <br>
 
 ---
 ## Contents:
@@ -58,15 +58,10 @@ Because the [indubituble quality of our uniquely human attributes](https://en.wi
 ## Personal Projects (active)
 
 1. **Multi-modal RAG AI CLI 10 Nov 2023 (active)** <br>
-  Following the release of the OpenAI API I started a personal project to build a wrapper and context manager around the AI service. Essentially, I implemented a series of libraries analogous to LangChain. <br>
-  I used this wrapper to experiment and build tools around the API service. Some early experiments involved multi-step prompting and chain of thought reasoning.
-  Ultimately, I honed in on creating a multi-modal rag tool; quickly accessible via terminal and able to work directly on the file system. <br> The user is able to manually build and manage the context using a combination of context files and prompts, this context is tied to a named session allowing the user to work on and save multiple prompt contexts at once. The application is able to parse multiple filetypes and whole directories in a context token efficient manner with high coherence results for formats such as docx and ipynb. <br>
-  Recent efforts are focusing on integrating a local model via pytorch to facilitate further experimentation with various model architectures and integrating sound (early fusion).
-
+  Following the release of the OpenAI API, I embarked on a personal project to craft a wrapper and context manager around the AI service, similar to what LangChain has become. This facilitated multi-step prompting and chain of thought reasoning. I honed in on creating a multi-modal RAG tool, accessible via terminal, enabling users to manually build and manage contexts while working directly on the file system. It efficiently parses multiple filetypes and directories, delivering highly coherent results for formats such as docx, eml, and ipynb. Currently, I'm integrating a local model via PyTorch to push the boundaries of experimentation with various architectures and sound (early fusion).
+  
 2. **Course Content Generator** <br>
-  I worked extensively with docx in python to produce a markdown to word document generator to enable separation of content and delivery formats. This enabled us to maintain interoperability with existing process while delivering the following  benefits:
-    - version control content using git.
-    - allowed for learning content to be converted to a more token efficient format to enable rag based prompting.
+  I worked extensively with docx in Python to create a markdown-to-word document generator, enabling separation of content and delivery formats. This maintained interoperability with our existing processes while providing key benefits such as version control via git and converting learning content to a more token-efficient format, facilitating RAG-based prompting.
 
 3. **Early Fusion of Sound in Transformer Architecture (Research Project)**<br>
   I am currently working on integrating early fusion sound support into my local models to enable realtime sound processing. The project is inspired by the [llama-s Project by homebrewltd](https://github.com/homebrewltd/llama3-s) (an AI research team based in Singapore) using open-source LLM fine-tuning methods: [torchtune](https://github.com/pytorch/torchtune).
