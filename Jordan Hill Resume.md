@@ -5,17 +5,6 @@
 **LinkedIn:** [linkedin.com/in/jordanlochhill](linkedin.com/in/jordanlochhill) <br>
 **GitHub:** [github.com/jordanhill](github.com/jordanlochhill) <br>
 
----
-## Contents:
-1. [Summary](#summary)
-2. [Qualifications](#qualifications)
-3. [Personal Projects](#personal-projects-active)
-4. [Leadership in AI](#leadership-in-ai)
-5. [Professional Experience](#professional-experience)
-6. [Key Skills](#key-skills)
-7. [Professional Affiliations](#professional-affiliations)
-8. [Projects and Achievements](#projects-and-achievements)
-9. [References](#references)
 
 ---
 >Seeking opportunities to leverage neural networks, LLM, & Gen AI in novel ways to produce meaningful solutions in education, health, mining, or other sectors.
@@ -53,22 +42,22 @@ Because the [indubituble quality of our uniquely human attributes](https://en.wi
 
 ---
 
-<div style="page-break-after: always;"></div>
+<div style="page-break-after: auto;"></div>
 
-## Personal Projects (active)
+## Personal Projects
 
-1. **Multi-modal RAG AI CLI 10 Nov 2023 (active)** <br>
+1. **Multi-modal RAG AI CLI — 10 November 2023** <br>
   Following the release of the OpenAI API, I embarked on a personal project to craft a wrapper and context manager around the AI service, similar to what LangChain has become. This facilitated multi-step prompting and chain of thought reasoning. I honed in on creating a multi-modal RAG tool, accessible via terminal, enabling users to manually build and manage contexts while working directly on the file system. It efficiently parses multiple filetypes and directories, delivering highly coherent results for formats such as docx, eml, and ipynb. Currently, I'm integrating a local model via PyTorch to push the boundaries of experimentation with various architectures and sound (early fusion).
-  
-2. **Course Content Generator** <br>
+
+2. **Course Content Generator — 29 April 2024** <br>
   I worked extensively with docx in Python to create a markdown-to-word document generator, enabling separation of content and delivery formats. This maintained interoperability with our existing processes while providing key benefits such as version control via git and converting learning content to a more token-efficient format, facilitating RAG-based prompting.
 
-3. **Early Fusion of Sound in Transformer Architecture (Research Project)**<br>
-  I am currently working on integrating early fusion sound support into my local models to enable realtime sound processing. The project is inspired by the [llama-s Project by homebrewltd](https://github.com/homebrewltd/llama3-s) (an AI research team based in Singapore) using open-source LLM fine-tuning methods: [torchtune](https://github.com/pytorch/torchtune).
+3. **Early Fusion of Sound in Transformer Architecture (Research Project) — 29th August 2024**<br>
+  I am currently working on integrating early fusion sound support into my local models to enable realtime sound processing. The project is inspired by the [llama-s Project by homebrewltd](https://github.com/homebrewltd/llama3-s) (an AI research team based in Singapore) using open-source LLM fine-tuning methods ([torchtune](https://github.com/pytorch/torchtune)).
 
 ---
 
-## Leadership in AI
+## Leadership in AI Education
 
 1. **Artificial Intelligence Skill Set** <br>
 For the last year, I have worked on developing an Artificial Intelligence skillset to upskill industry professionals in the use of AI and Deep Learning techniques. We were the first TAFE nationally to deliver ICTSS00120 (the nationally recognised skillset for Artificial Intelligence). I have trained cross-sector cohorts, from health, mining, & academia, in the responsible use, development, training and evaluation of machine learning models using scikit-learn and pytorch. <br>
@@ -82,7 +71,7 @@ I have finalised a curriculum plan and am currently engaged in project managing 
 
 ---
 
-<div style="page-break-after: always;"></div>
+<div style="page-break-after: auto;"></div>
 
 ## **Professional Experience**
 
@@ -124,30 +113,6 @@ I have finalised a curriculum plan and am currently engaged in project managing 
 *Apr 2020–Dec 2020*
 - Contributed to the development of WHS risk management software, supporting the team in coding, debugging, and maintenance tasks (Java, Angularjs).
 - Assisted in the deployment and optimization of software functionalities for end-users.
-
----
-
-<div style="page-break-after: always;"></div>
-
-## **Key Skills**
-
-- **Technical:** Machine Learning, Data Analysis, Python, Kubernetes, GitOps, Cloud Computing (Azure, AWS), Infrastructure as Code (IaC), Batch Processing, Event-Based Programming.
-- **Leadership:** Project Management, Curriculum Development, Cross-functional Collaboration, Strategic Planning.
-- **Communication:** Technical Writing, Public Speaking, Stakeholder Engagement, Teaching and Mentorship.
-- **Other:** Ethical AI, Inclusive Education Practices, Data Security.
-
----
-
-## **Professional Affiliations**
-
-- Member, Australian Computer Society (ACS)
-- Member, Future Skills Organisation Technical Committee
-
----
-
-## **Projects and Achievements**
-
-- **AI Traffic Safety Project:** Coordinated an AI project for Urban Peakhour with the Victorian Department of Planning and Transport, showcasing applications of machine vision and predictive AI to improve safety at level crossings in downtown Melbourne.
 
 ---
 
