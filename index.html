@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jordan Hill Resume.md</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+
+    <style>
+      /* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+      /*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+      body {
+        font-family: var(
+          --vscode-markdown-font-family,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe WPC",
+          "Segoe UI",
+          "Ubuntu",
+          "Droid Sans",
+          sans-serif
+        );
+        font-size: var(--vscode-markdown-font-size, 14px);
+        padding: 0 26px;
+        line-height: var(--vscode-markdown-line-height, 22px);
+        word-wrap: break-word;
+      }
+
+      #code-csp-warning {
+        position: fixed;
+        top: 0;
+        right: 0;
+        color: white;
+        margin: 16px;
+        text-align: center;
+        font-size: 12px;
+        font-family: sans-serif;
+        background-color: #444444;
+        cursor: pointer;
+        padding: 6px;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+      }
+
+      #code-csp-warning:hover {
+        text-decoration: none;
+        background-color: #007acc;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+      }
+
+      body.scrollBeyondLastLine {
+        margin-bottom: calc(100vh - 22px);
+      }
+
+      body.showEditorSelection .code-line {
+        position: relative;
+      }
+
+      body.showEditorSelection .code-active-line:before,
+      body.showEditorSelection .code-line:hover:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -12px;
+        height: 100%;
+      }
+
+      body.showEditorSelection li.code-active-line:before,
+      body.showEditorSelection li.code-line:hover:before {
+        left: -30px;
+      }
+
+      .vscode-light.showEditorSelection .code-active-line:before {
+        border-left: 3px solid rgba(0, 0, 0, 0.15);
+      }
+
+      .vscode-light.showEditorSelection .code-line:hover:before {
+        border-left: 3px solid rgba(0, 0, 0, 0.4);
+      }
+
+      .vscode-light.showEditorSelection .code-line .code-line:hover:before {
+        border-left: none;
+      }
+
+      .vscode-dark.showEditorSelection .code-active-line:before {
+        border-left: 3px solid rgba(255, 255, 255, 0.4);
+      }
+
+      .vscode-dark.showEditorSelection .code-line:hover:before {
+        border-left: 3px solid rgba(255, 255, 255, 0.6);
+      }
+
+      .vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+        border-left: none;
+      }
+
+      .vscode-high-contrast.showEditorSelection .code-active-line:before {
+        border-left: 3px solid rgba(255, 160, 0, 0.7);
+      }
+
+      .vscode-high-contrast.showEditorSelection .code-line:hover:before {
+        border-left: 3px solid rgba(255, 160, 0, 1);
+      }
+
+      .vscode-high-contrast.showEditorSelection
+        .code-line
+        .code-line:hover:before {
+        border-left: none;
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      a:focus,
+      input:focus,
+      select:focus,
+      textarea:focus {
+        outline: 1px solid -webkit-focus-ring-color;
+        outline-offset: -1px;
+      }
+
+      hr {
+        border: 0;
+        height: 2px;
+        border-bottom: 2px solid;
+      }
+
+      h1 {
+        padding-bottom: 0.3em;
+        line-height: 1.2;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-weight: normal;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      table > thead > tr > th {
+        text-align: left;
+        border-bottom: 1px solid;
+      }
+
+      table > thead > tr > th,
+      table > thead > tr > td,
+      table > tbody > tr > th,
+      table > tbody > tr > td {
+        padding: 5px 10px;
+      }
+
+      table > tbody > tr + tr > td {
+        border-top: 1px solid;
+      }
+
+      blockquote {
+        margin: 0 7px 0 5px;
+        padding: 0 16px 0 10px;
+        border-left-width: 5px;
+        border-left-style: solid;
+      }
+
+      code {
+        font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New",
+          monospace, "Droid Sans Fallback";
+        font-size: 1em;
+        line-height: 1.357em;
+      }
+
+      body.wordWrap pre {
+        white-space: pre-wrap;
+      }
+
+      pre:not(.hljs),
+      pre.hljs code > div {
+        padding: 16px;
+        border-radius: 3px;
+        overflow: auto;
+      }
+
+      pre code {
+        color: var(--vscode-editor-foreground);
+        tab-size: 4;
+      }
+
+      /** Theming */
+
+      .vscode-light pre {
+        background-color: rgba(220, 220, 220, 0.4);
+      }
+
+      .vscode-dark pre {
+        background-color: rgba(10, 10, 10, 0.4);
+      }
+
+      .vscode-high-contrast pre {
+        background-color: rgb(0, 0, 0);
+      }
+
+      .vscode-high-contrast h1 {
+        border-color: rgb(0, 0, 0);
+      }
+
+      .vscode-light table > thead > tr > th {
+        border-color: rgba(0, 0, 0, 0.69);
+      }
+
+      .vscode-dark table > thead > tr > th {
+        border-color: rgba(255, 255, 255, 0.69);
+      }
+
+      .vscode-light h1,
+      .vscode-light hr,
+      .vscode-light table > tbody > tr + tr > td {
+        border-color: rgba(0, 0, 0, 0.18);
+      }
+
+      .vscode-dark h1,
+      .vscode-dark hr,
+      .vscode-dark table > tbody > tr + tr > td {
+        border-color: rgba(255, 255, 255, 0.18);
+      }
+    </style>
+
+    <style>
+      /* Tomorrow Theme */
+      /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+      /* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+      /* Tomorrow Comment */
+      .hljs-comment,
+      .hljs-quote {
+        color: #8e908c;
+      }
+
+      /* Tomorrow Red */
+      .hljs-variable,
+      .hljs-template-variable,
+      .hljs-tag,
+      .hljs-name,
+      .hljs-selector-id,
+      .hljs-selector-class,
+      .hljs-regexp,
+      .hljs-deletion {
+        color: #c82829;
+      }
+
+      /* Tomorrow Orange */
+      .hljs-number,
+      .hljs-built_in,
+      .hljs-builtin-name,
+      .hljs-literal,
+      .hljs-type,
+      .hljs-params,
+      .hljs-meta,
+      .hljs-link {
+        color: #f5871f;
+      }
+
+      /* Tomorrow Yellow */
+      .hljs-attribute {
+        color: #eab700;
+      }
+
+      /* Tomorrow Green */
+      .hljs-string,
+      .hljs-symbol,
+      .hljs-bullet,
+      .hljs-addition {
+        color: #718c00;
+      }
+
+      /* Tomorrow Blue */
+      .hljs-title,
+      .hljs-section {
+        color: #4271ae;
+      }
+
+      /* Tomorrow Purple */
+      .hljs-keyword,
+      .hljs-selector-tag {
+        color: #8959a8;
+      }
+
+      .hljs {
+        display: block;
+        overflow-x: auto;
+        color: #4d4d4c;
+        padding: 0.5em;
+      }
+
+      .hljs-emphasis {
+        font-style: italic;
+      }
+
+      .hljs-strong {
+        font-weight: bold;
+      }
+    </style>
+
+    <style>
+      /*
+ * Markdown PDF CSS
+ */
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI",
+          "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+        padding: 0 12px;
+      }
+
+      pre {
+        background-color: #f8f8f8;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        overflow-x: auto;
+        white-space: pre-wrap;
+        overflow-wrap: break-word;
+      }
+
+      pre:not(.hljs) {
+        padding: 23px;
+        line-height: 19px;
+      }
+
+      blockquote {
+        background: rgba(127, 127, 127, 0.1);
+        border-color: rgba(0, 122, 204, 0.5);
+      }
+
+      .emoji {
+        height: 1.4em;
+      }
+
+      code {
+        font-size: 14px;
+        line-height: 19px;
+      }
+
+      /* for inline code */
+      :not(pre):not(.hljs) > code {
+        color: #c9ae75; /* Change the old color so it seems less like an error */
+        font-size: inherit;
+      }
+
+      /* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+      .page {
+        page-break-after: always;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="file:///Users/jordan/Library/CloudStorage/OneDrive-Personal/Applications/Jobs/Template/style.css"
+      type="text/css"
+    />
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+  </head>
+  <body>
+    <script>
+      mermaid.initialize({
+        startOnLoad: true,
+        theme:
+          document.body.classList.contains("vscode-dark") ||
+          document.body.classList.contains("vscode-high-contrast")
+            ? "dark"
+            : "default",
+      });
+    </script>
+    <h1 id="jordan-hill"><strong>Jordan Hill</strong></h1>
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:jordanlochhill@gmail.com">jordanlochhill@gmail.com</a>
+      <br />
+      <strong>LinkedIn:</strong>
+      <a href="linkedin.com/in/jordanlochhill"
+        >linkedin.com/in/jordanlochhill</a
+      >
+      <br />
+      <strong>GitHub:</strong>
+      <a href="github.com/jordanhill">github.com/jordanhill</a> <br />
+    </p>
+    <hr />
+    <h2 id="contents">Contents:</h2>
+    <ol>
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#qualifications">Qualifications</a></li>
+      <li><a href="#personal-projects-active">Personal Projects</a></li>
+      <li><a href="#leadership-in-ai">Leadership in AI</a></li>
+      <li><a href="#professional-experience">Professional Experience</a></li>
+      <li><a href="#key-skills">Key Skills</a></li>
+      <li>
+        <a href="#professional-affiliations">Professional Affiliations</a>
+      </li>
+      <li>
+        <a href="#projects-and-achievements">Projects and Achievements</a>
+      </li>
+      <li><a href="#references">References</a></li>
+    </ol>
+    <hr />
+    <blockquote>
+      <p>
+        Seeking opportunities to leverage neural networks, LLM, &amp; Gen AI in
+        novel ways to produce meaningful solutions in education, health, mining,
+        or other sectors. Versatile professional with a robust liberal arts
+        background and growing expertise in Deep Learning and AI technologies.
+      </p>
+    </blockquote>
+    <hr />
+    <h2 id="summary"><strong>Summary</strong></h2>
+    <p>
+      This resumé attempts to convey the diversity of my skills and my most
+      current achievements and interests.
+    </p>
+    <p>
+      I was incredibly fortunate to have the privilege to study the great books
+      at <a href="https://www.sjc.edu/">St John's College, Annapolis</a> (class
+      of 2022). My liberal arts background informs everything I do and I have
+      found it invaluable in working in AI and Machine Learning technologies. It
+      allows me to look at problems from a completely different perspective from
+      most technical experts in the field.
+    </p>
+    <p>
+      One of the things that most excites me about recent breakthroughs in AI is
+      how it has given us pause to reflect on the complexity and value of our
+      humanity. Tech companies are investing billions of dollars in an attempt
+      to create computational models that poorly imitate the
+      <a
+        href="https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems"
+        >non-computational</a
+      >
+      way that we <em>understand</em> the world, our knowledge systems and
+      practices.
+    </p>
+    <p>
+      Because the
+      <a href="https://en.wikipedia.org/wiki/Meditations_on_First_Philosophy"
+        >indubituble quality of our uniquely human attributes</a
+      >
+      are poorly defined and understood, they have been somewhat undervalued
+      until now. As AI becomes more and more sophisticated the higher-level
+      thinking skills required by serious philosophical inquiry and the idea
+      that 'the ego' and its thoughts are of central importance to all our
+      endeavours as a species towards benefit.
+    </p>
+    <hr />
+    <h2 id="qualifications"><strong>Qualifications</strong></h2>
+    <p>
+      <strong>Graduate Certificate in Data Science, RMIT University</strong>
+      <em>Jan 2024–Apr 2024</em>
+    </p>
+    <ul>
+      <li>Achieved GPA: 3.8</li>
+      <li>Focused on Machine Learning and Data Analysis in Python &amp; R.</li>
+    </ul>
+    <p>
+      <strong>Master of Arts in the Liberal Arts, St John’s College</strong>
+      <em>Aug 2021–May 2023</em>
+    </p>
+    <ul>
+      <li>Achieved GPA: 3.950</li>
+      <li>Specialization in Ancient Greek language.</li>
+    </ul>
+    <p>
+      <strong
+        >Bachelor of Arts with First Class Honours in History, University of
+        Western Australia</strong
+      >
+      <em>Feb 2016–Dec 2019</em>
+    </p>
+    <ul>
+      <li>First Class (equiv to 3.8–4.0 GPA)</li>
+      <li>
+        Awarded the Philippa Madden Memorial Prize for best honours dissertation
+        on an early modern/medieval topic.
+      </li>
+    </ul>
+    <hr />
+    <div style="page-break-after: always"></div>
+    <h2 id="personal-projects-active">Personal Projects (active)</h2>
+    <ol>
+      <li>
+        <p>
+          <strong>Multi-modal RAG AI CLI 10 Nov 2023 (active)</strong> <br />
+          Following the release of the OpenAI API I started a personal project
+          to build a wrapper and context manager around the AI service.
+          Essentially, I implemented a series of libraries analogous to
+          LangChain. <br />
+          I used this wrapper to experiment and build tools around the API
+          service. Some early experiments involved multi-step prompting and
+          chain of thought reasoning. Ultimately, I honed in on creating a
+          multi-modal rag tool; quickly accessible via terminal and able to work
+          directly on the file system. <br />
+          The user is able to manually build and manage the context using a
+          combination of context files and prompts, this context is tied to a
+          named session allowing the user to work on and save multiple prompt
+          contexts at once. The application is able to parse multiple filetypes
+          and whole directories in a context token efficient manner with high
+          coherence results for formats such as docx and ipynb. <br />
+          Recent efforts are focusing on integrating a local model via pytorch
+          to facilitate further experimentation with various model architectures
+          and integrating sound (early fusion).
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>Course Content Generator</strong> <br />
+          I worked extensively with docx in python to produce a markdown to word
+          document generator to enable separation of content and delivery
+          formats. This enabled us to maintain interoperability with existing
+          process while delivering the following benefits:
+        </p>
+        <ul>
+          <li>version control content using git.</li>
+          <li>
+            allowed for learning content to be converted to a more token
+            efficient format to enable rag based prompting.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          <strong
+            >Early Fusion of Sound in Transformer Architecture (Research
+            Project)</strong
+          ><br />
+          I am currently working on integrating early fusion sound support into
+          my local models to enable realtime sound processing. The project is
+          inspired by the
+          <a href="https://github.com/homebrewltd/llama3-s"
+            >llama-s Project by homebrewltd</a
+          >
+          (an AI research team based in Singapore) using open-source LLM
+          fine-tuning methods:
+          <a href="https://github.com/pytorch/torchtune">torchtune</a>.
+        </p>
+      </li>
+    </ol>
+    <hr />
+    <h2 id="leadership-in-ai">Leadership in AI</h2>
+    <ol>
+      <li>
+        <p>
+          <strong>Artificial Intelligence Skill Set</strong> <br />
+          For the last year, I have worked on developing an Artificial
+          Intelligence skillset to upskill industry professionals in the use of
+          AI and Deep Learning techniques. We were the first TAFE nationally to
+          deliver ICTSS00120 (the nationally recognised skillset for Artificial
+          Intelligence). I have trained cross-sector cohorts, from health,
+          mining, &amp; academia, in the responsible use, development, training
+          and evaluation of machine learning models using scikit-learn and
+          pytorch. <br />
+          We are now partnering with Synergy to upskill their in-house AI and
+          Machine Learning capabilities, delivering the course commercially.
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>Standalone network and AI Fine-tuning Lab for NMTAFE</strong>
+          <br />
+          I have worked closely with the Portfolio Director Maree Tabb to scope
+          and source proposals for a new training network and AI fine-tuning lab
+          to support delivery of future AI courses at NMTAFE. I established
+          partnerships with Hewlett Packard Enterprise (HPE) and DC Alliance
+          (DCA) to provide hardware and data centre services.
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>Cert IV and Diploma in Data Science and AI</strong> <br />
+          I have finalised a curriculum plan and am currently engaged in project
+          managing course development for two new qualifications in AI at Cert
+          IV level and Diploma Level slated for a Semester 1 2025 delivery for
+          Cert IV and Semester 1 2026 delivery for Diploma.
+        </p>
+      </li>
+    </ol>
+    <hr />
+    <div style="page-break-after: always"></div>
+    <h2 id="professional-experience">
+      <strong>Professional Experience</strong>
+    </h2>
+    <p><strong>CEO, VetGrader</strong> <em>Jan 2024–Present</em></p>
+    <ul>
+      <li>
+        <strong>Mission:</strong>
+        <ul>
+          <li>
+            VetGrader is a LLM-based tool designed to help Vocational Education
+            and Training students receive feedback on their assessment work. The
+            tool does not complete the assessment for them but rather guides and
+            encourages the student by providing detailed feedback on each
+            question.
+          </li>
+          <li>
+            The goal of vetgrader is to provide a proof-of-concept for the
+            ability of LLMs to conduct reliable evaluation according to a set of
+            standards.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Key Achievements:</strong>
+        <ul>
+          <li>
+            Applied for Microsoft AI Fast Track program funding and secured upto
+            150,000 USD in Azure cloud credits.
+          </li>
+          <li>
+            Launched demo website as a streamlit app (<a
+              href="https://vetgrader.com.au"
+              >vetgrader.com.au</a
+            >)
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p>
+      <strong>Lecturer, North Metropolitan TAFE</strong>
+      <em>Aug 2023–Present</em>
+    </p>
+    <ul>
+      <li>
+        <strong>Key Responsibilities:</strong>
+        <ul>
+          <li>
+            Pioneered the development of a standalone network for the Integrated
+            Technology and Cybersecurity portfolio to support new GPU server
+            infrastructure for AI courses, enabling students to work with
+            transformer models, such as llama3 and openELM.
+          </li>
+          <li>
+            Designed and delivered innovative curriculum plans for two new
+            qualifications in AI and Data Science, successfully attracting a
+            full cohort of students.
+          </li>
+          <li>
+            Developed the ICTSS00120 Artificial Intelligence Skill Set,
+            integrating ethics and discussion-based learning alongside highly
+            technical content teaching students to train their own AI models.
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p>
+      <strong>CTO, Urban Peak Hour Technologies</strong>
+      <em>Jan 2023–Present</em>
+    </p>
+    <ul>
+      <li>
+        <strong>Key Achievements:</strong>
+        <ul>
+          <li>
+            Secured $28,000 in cloud credit funding through the Microsoft
+            FastTrack program, enabling bootstrapping of initial operations and
+            development.
+          </li>
+          <li>
+            Coordinated with the Victorian Department of Planning and Transport
+            on strategy, project requirements, and data security measures for an
+            AI traffic safety proof-of-concept project.
+          </li>
+          <li>
+            Oversaw the production of a minimum viable product and provided
+            on-going technical advice to secure industry partners and further
+            investment.
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p>
+      <strong
+        >Machine Learning Engineer (Research Assistant), University of Melbourne
+        (AIMES Laboratory)</strong
+      >
+      <em>Jan 2022–Dec 2022</em>
+    </p>
+    <ul>
+      <li>
+        Streamlined deployment processes using Infrastructure as Code (IaC) and
+        Kubernetes, reducing deployment times from one week to 20 minutes.
+      </li>
+      <li>
+        Enhanced data wrangling techniques and improved the efficiency of data
+        pipelines through batch processing and asynchronous event-based
+        patterns.
+      </li>
+      <li>
+        Increased reliability of automated prediction and training procedures
+        with advanced message queueing patterns.
+      </li>
+    </ul>
+    <p>
+      <strong
+        >Software Developer/Solutions Architect, InSig Technologies</strong
+      >
+      <em>Jan 2021–Aug 2021</em>
+    </p>
+    <ul>
+      <li>
+        Developed a mining information system for RUC mining (now part of the
+        Redpath Group).
+      </li>
+      <li>
+        Engaged in full-stack development, optimizing workflows and system
+        architecture for enhanced performance.
+      </li>
+    </ul>
+    <p>
+      <strong>Graduate Software Developer, Risk Management Technologies</strong>
+      <em>Apr 2020–Dec 2020</em>
+    </p>
+    <ul>
+      <li>
+        Contributed to the development of WHS risk management software,
+        supporting the team in coding, debugging, and maintenance tasks (Java,
+        Angularjs).
+      </li>
+      <li>
+        Assisted in the deployment and optimization of software functionalities
+        for end-users.
+      </li>
+    </ul>
+    <hr />
+    <div style="page-break-after: always"></div>
+    <h2 id="key-skills"><strong>Key Skills</strong></h2>
+    <ul>
+      <li>
+        <strong>Technical:</strong> Machine Learning, Data Analysis, Python,
+        Kubernetes, GitOps, Cloud Computing (Azure, AWS), Infrastructure as Code
+        (IaC), Batch Processing, Event-Based Programming.
+      </li>
+      <li>
+        <strong>Leadership:</strong> Project Management, Curriculum Development,
+        Cross-functional Collaboration, Strategic Planning.
+      </li>
+      <li>
+        <strong>Communication:</strong> Technical Writing, Public Speaking,
+        Stakeholder Engagement, Teaching and Mentorship.
+      </li>
+      <li>
+        <strong>Other:</strong> Ethical AI, Inclusive Education Practices, Data
+        Security.
+      </li>
+    </ul>
+    <hr />
+    <h2 id="professional-affiliations">
+      <strong>Professional Affiliations</strong>
+    </h2>
+    <ul>
+      <li>Member, Australian Computer Society (ACS)</li>
+      <li>Member, Future Skills Organisation Technical Committee</li>
+    </ul>
+    <hr />
+    <h2 id="projects-and-achievements">
+      <strong>Projects and Achievements</strong>
+    </h2>
+    <ul>
+      <li>
+        <strong>AI Traffic Safety Project:</strong> Coordinated an AI project
+        for Urban Peakhour with the Victorian Department of Planning and
+        Transport, showcasing applications of machine vision and predictive AI
+        to improve safety at level crossings in downtown Melbourne.
+      </li>
+    </ul>
+    <hr />
+    <h2 id="references"><strong>References</strong></h2>
+    <p>Available upon request.</p>
+    <hr />
+  </body>
+</html>
