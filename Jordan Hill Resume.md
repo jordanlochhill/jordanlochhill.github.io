@@ -1,7 +1,7 @@
 # **Jordan Hill**
 
 
-**Email:** jordanlochhill@gmail.com <br>
+**Email:** [jordanlochhill@gmail.com](mailto:jordanlochhill@gmail.com) <br>
 **LinkedIn:** [linkedin.com/in/jordanlochhill](linkedin.com/in/jordanlochhill) <br>
 **GitHub:** [github.com/jordanhill](github.com/jordanhill) <br>
 
@@ -12,6 +12,10 @@
 3. [Personal Projects](#personal-projects-active)
 4. [Leadership in AI](#leadership-in-ai)
 5. [Professional Experience](#professional-experience)
+6. [Key Skills](#key-skills)
+7. [Professional Affiliations](#professional-affiliations)
+8. [Projects and Achievements](#projects-and-achievements)
+9. [References](#references)
 
 ---
 >Seeking opportunities to leverage neural networks, LLM, & Gen AI in novel ways to produce meaningful solutions in education, health, mining, or other sectors.
@@ -40,16 +44,16 @@ Because the [indubituble quality of our uniquely human attributes](https://en.wi
 **Master of Arts in the Liberal Arts, St John’s College**
 *Aug 2021–May 2023*
 - Achieved GPA: 3.950
-- Specialization in Ancient Greek and Philosophy.
+- Specialization in Ancient Greek language.
 
-**Honours, First Class in History, University of Western Australia**
-*Feb 2019–Dec 2019*
+**Bachelor of Arts with First Class Honours in History, University of Western Australia**
+*Feb 2016–Dec 2019*
+- First Class (equiv to 3.8–4.0 GPA)
 - Awarded the Philippa Madden Memorial Prize for best honours dissertation on an early modern/medieval topic.
 
-**Bachelor of Arts (History and English), University of Western Australia**
-*Feb 2016–Dec 2018*
-
 ---
+
+<div style="page-break-after: always;"></div>
 
 ## Personal Projects (active)
 
@@ -82,6 +86,8 @@ I have worked closely with the Portfolio Director Maree Tabb to scope and source
 I have finalised a curriculum plan and am currently engaged in project managing course development for two new qualifications in AI at Cert IV level and Diploma Level slated for a Semester 1 2025 delivery for Cert IV and Semester 1 2026 delivery for Diploma. 
 
 ---
+
+<div style="page-break-after: always;"></div>
 
 ## **Professional Experience**
 
@@ -126,6 +132,8 @@ I have finalised a curriculum plan and am currently engaged in project managing 
 
 ---
 
+<div style="page-break-after: always;"></div>
+
 ## **Key Skills**
 
 - **Technical:** Machine Learning, Data Analysis, Python, Kubernetes, GitOps, Cloud Computing (Azure, AWS), Infrastructure as Code (IaC), Batch Processing, Event-Based Programming.
@@ -148,7 +156,7 @@ I have finalised a curriculum plan and am currently engaged in project managing 
 
 ---
 
-**References**
+## **References**
 
 Available upon request.
 
