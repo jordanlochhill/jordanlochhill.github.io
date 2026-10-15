@@ -94,10 +94,11 @@ sequence-model core (Gated DeltaNet, attention or a hybrid) run at its
 own rate, independent of the rates at which signals enter and leave the
 model, so one architecture serves raw audio, text and both
 together.</li>
-<li><strong>Raw-waveform audio.</strong> Encodes raw audio into
-lower-rate learned representations and reconstructs the waveform at
-approximately 23 dB signal-to-noise ratio on recorded audio in
-development experiments.</li>
+<li><strong>Proof-of-concept audio reconstruction.</strong> Encodes raw
+8 kHz audio into learned representations, carries them through a
+fixed-rate bottleneck in which a Gated DeltaNet core runs at 1 kHz (8×
+fewer positions), and reconstructs the waveform at approximately 23 dB
+signal-to-noise ratio on recorded audio.</li>
 <li><strong>Full-duplex conversation.</strong> Extends Moshi (Défossez
 et al., 2024), the basis of NVIDIA’s PersonaPlex. Moshi hears and speaks
 through Mimi, a separately trained codec that quantises 24 kHz speech
