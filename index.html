@@ -106,9 +106,10 @@ through Mimi, a separately trained codec that quantises 24 kHz speech
 into eight discrete codebooks at a fixed 12.5 Hz; Kairos instead learns
 continuous representations from raw waveform end to end, on audio and
 text clocks that advance independently, scaling the playground’s
-reconstruction to the full English LibriVox corpus. Trains
-0.8-billion-parameter models from Qwen3.5-0.8B on four NVIDIA H100s,
-against a Moshi-recipe replication at the same scale.</li>
+reconstruction to the full English LibriVox corpus. Demonstrated
+end-to-end training at 0.8 billion parameters (Qwen3.5-0.8B) on four
+NVIDIA H100s over 12,000 updates, against a Moshi-recipe replication at
+the same scale.</li>
 <li><strong>Byte-level language modelling from signals.</strong>
 Combines text encoded as a signal for Kairos with byte-level multi-token
 prediction, extending the 8-byte horizon of Gloeckle et al. (2024) to 32
