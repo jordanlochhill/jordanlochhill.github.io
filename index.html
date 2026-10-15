@@ -112,7 +112,7 @@ prediction, extending the 8-byte horizon of Gloeckle et al. (2024) to 32
 bytes, scaling to 64. The 256-symbol byte vocabulary keeps many
 prediction heads cheap where token vocabularies make them a memory
 bottleneck, and the longer horizon trains a tokenizer-free model towards
-word-scale structure. Trained on four AMD MI210s and NVIDIA GPUs and
+word-scale structure. Trained on four AMD MI210s and NVIDIA H100s and
 evaluated on the CORE benchmark suite, alongside an original recurrent
 token mixer.</li>
 <li><strong>Evidence-led redesign.</strong> Earlier versions, tested
