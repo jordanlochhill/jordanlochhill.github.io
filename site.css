@@ -1,0 +1,31 @@
+/* Public CV page: generated from academic-cv.md by `make site`. */
+:root {
+  --bg: #fbfaf7; --fg: #1d1c1a; --muted: #5f5b54; --rule: #dcd7cd; --accent: #1d1c1a;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #161513; --fg: #ece9e2; --muted: #a29d93; --rule: #3a3631; --accent: #ece9e2; }
+}
+:root[data-theme="dark"] { --bg: #161513; --fg: #ece9e2; --muted: #a29d93; --rule: #3a3631; --accent: #ece9e2; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0 auto; max-width: 50rem; padding: 2.5rem 16px 4rem;
+  background: var(--bg); color: var(--fg);
+  font: 16.5px/1.55 Charter, "Bitstream Charter", "Iowan Old Style", Georgia, serif;
+  hyphens: auto; overflow-wrap: break-word;
+}
+nav.docs { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; justify-content: flex-end; font-size: .92rem; margin-bottom: 1rem; }
+a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+h1 { font-size: 1.9rem; font-weight: 600; margin: 0 0 .2rem; }
+h1 + p { color: var(--muted); margin-top: 0; }
+h2 {
+  font-size: .95rem; letter-spacing: .08em; text-transform: uppercase; font-weight: 600;
+  margin: 2.2rem 0 .7rem; padding-bottom: .3rem; border-bottom: 1px solid var(--rule);
+}
+h3 { font-size: 1.02rem; margin: 1.2rem 0 .2rem; }
+h3 + p em { color: var(--muted); }
+p { margin: 0 0 .65rem; }
+ul { padding-left: 1.2rem; margin: .3rem 0 .9rem; }
+li { margin-bottom: .35rem; }
+@media (max-width: 520px) { body { font-size: 15.5px; padding-top: 1.5rem; } h1 { font-size: 1.6rem; } nav.docs { justify-content: flex-start; } }
+@media print { nav.docs { display: none; } body { max-width: none; padding: 0; } }
