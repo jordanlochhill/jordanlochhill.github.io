@@ -131,9 +131,11 @@ and a dedicated workstation, with guardrails for unattended use. Over
 <li><strong>Verified training.</strong> A gradient-checked reference
 implementation and a PyTorch training system validated against it keep
 large-scale results traceable to verified mathematics.</li>
-<li><strong>Distributed training.</strong> FSDP and DDP training on
-NVIDIA H100 and AMD MI210 GPUs, including a 2.26× faster training update
-in a matched four-H100 benchmark with loss and gradient agreement
+<li><strong>Cross-vendor kernels and training.</strong> Custom Triton
+kernels for both NVIDIA CUDA and AMD ROCm, qualified against the
+reference on RTX 4090 and MI210 GPUs, with FSDP and DDP training across
+H100 and MI210 clusters, including a 2.26× faster training update in a
+matched four-H100 benchmark with loss and gradient agreement
 checks.</li>
 <li><strong>Research platform.</strong> A self-hosted Kubernetes (k3s)
 platform with TLS and single sign-on serves live training playgrounds,
@@ -263,7 +265,7 @@ translation).<br />
 attention sequence models; audio representation learning; language
 modelling; distributed training on CUDA and ROCm; numerical validation
 and gradient checking.<br />
-<strong>Engineering:</strong> Python, JavaScript, Slurm, Kubernetes,
-Docker, Linux, Git, FastAPI.</p>
+<strong>Engineering:</strong> Python, Triton, JavaScript, Slurm,
+Kubernetes, Docker, Linux, Git, FastAPI.</p>
 </body>
 </html>
